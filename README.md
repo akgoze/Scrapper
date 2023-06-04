@@ -1,3 +1,5 @@
+![Scrapper API](scrapper.png)
+
 # Scrapper API
 
 Scrapper API is a Node.js API that allows you to scrape website metadata. It retrieves the `title`, `description`, `image`, and `URL` of a given web page. This API can be used to extract essential information from web pages for various purposes such as building web scrapers, generating previews, or aggregating data.
