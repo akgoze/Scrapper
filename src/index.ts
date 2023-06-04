@@ -2,8 +2,6 @@ import express, { Request, Response } from "express";
 import { fetchURLMeta } from "./modules/parsers";
 
 const app = express();
-const PORT = process.env.PORT || 5001;
-
 app.use(express.json());
 
 app.get("/", (req: Request, res: Response) => {
@@ -28,6 +26,4 @@ app.get("/scrapper", async (req: Request, res: Response) => {
   }
 });
 
-app.listen(() => {
-  console.log(`Server is running on port ${PORT}`);
-});
+app.listen();
