@@ -31,12 +31,7 @@ The API server will start running on `http://localhost:3000`.
 
 The following endpoints are available in the Scrapper API:
 
-### 1. GET `/`
-
-- Description: Returns a `"Hello World!"` message.
-- Example: `http://localhost:3000/`
-
-### 2. GET `/scrapper`
+### 1. GET `/scrapper`
 
 - Description: Scrapes the metadata of a given web page.
 - Parameters:
@@ -54,10 +49,10 @@ Example response:
 
 ```json
 {
-  "title": "Example Domain",
-  "description": "This is an example website",
-  "image": "https://www.example.com/image.jpg",
-  "url": "https://www.example.com"
+  "title": "Fatih Akgöze - Frontend Engineer",
+  "description": "Hello. My name is Fatih Akgöze. I'm Frontend Engineer.",
+  "image": "https://akgoze.dev/Assets/Images/share-image.png",
+  "url": "https://akgoze.dev"
 }
 ```
 
