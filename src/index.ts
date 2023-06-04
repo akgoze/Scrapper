@@ -8,7 +8,7 @@ app.get("/", (req: Request, res: Response) => {
   try {
     res.status(200).send("Hello World!");
   } catch (error) {
-    console.error(error);
+    res.status(500).send({ ERROR: error });
   }
 });
 
@@ -22,7 +22,7 @@ app.get("/scrapper", async (req: Request, res: Response) => {
       res.send(data);
     });
   } catch (error) {
-    res.status(500).send({ ERROR: error });
+    res.status(500).send({ error: error });
   }
 });
 
