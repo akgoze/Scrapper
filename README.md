@@ -1,4 +1,4 @@
-![Scrapper API](scrapper.png)
+![Scrapper API](scrapper-api.png)
 
 # Scrapper API
 
