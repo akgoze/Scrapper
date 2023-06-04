@@ -27,3 +27,5 @@ app.get("/scrapper", async (req: Request, res: Response) => {
 });
 
 app.listen();
+
+export default app;
