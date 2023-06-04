@@ -17,16 +17,16 @@ const parsers_1 = require("./modules/parsers");
 const app = (0, express_1.default)();
 const PORT = process.env.PORT || 5001;
 app.use(express_1.default.json());
-app.get('/', (req, res) => {
+app.get("/", (req, res) => {
     try {
-        res.status(200).send('Hello World!');
+        res.status(200).send("Hello World!");
     }
     catch (error) {
         console.error(error);
     }
 });
-app.get('/scrapper', (req, res) => __awaiter(void 0, void 0, void 0, function* () {
-    const url = req.body.url;
+app.get("/scrapper", (req, res) => __awaiter(void 0, void 0, void 0, function* () {
+    const url = req.query.url;
     try {
         yield res.status(200);
         yield (0, parsers_1.fetchURLMeta)(url).then((data) => {

@@ -28,6 +28,6 @@ app.get("/scrapper", async (req: Request, res: Response) => {
   }
 });
 
-app.listen(PORT, () => {
+app.listen(() => {
   console.log(`Server is running on port ${PORT}`);
 });
