@@ -1,7 +1,7 @@
 {
   "name": "scrapper",
   "version": "1.0.0",
-  "description": "Collector page meta datas for website.",
+  "description": "Scrapper API is a Node.js API that allows you to scrape website metadata.",
   "main": "index.js",
   "scripts": {
     "start": "jest && npx tsc",
