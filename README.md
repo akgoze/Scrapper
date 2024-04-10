@@ -4,7 +4,14 @@
 
 Scrapper API is a Node.js API that allows you to scrape website metadata. It retrieves the `title`, `description`, `image`, and `URL` of a given web page. This API can be used to extract essential information from web pages for various purposes such as building web scrapers, generating previews, or aggregating data.
 
-## Installation
+## Installation (Using docker)
+
+To user Scrapper API, run following command:
+```sh
+docker run -p 3000:3000 docker pull ghcr.io/akgoze/scrapper:latest
+```
+
+## Installation (Without docker)
 
 To use the Scrapper API, follow these steps:
 
