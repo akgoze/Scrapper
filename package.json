@@ -4,10 +4,10 @@
   "description": "Scrapper API is a Node.js API that allows you to scrape website metadata.",
   "main": "index.js",
   "scripts": {
-    "start": "jest && npx tsc",
+    "start": "jest && npx tsc && node dist/index.js",
     "dev": "npx tsc && node dist/index.js",
     "test": "jest"
-  },
+  },  
   "repository": {
     "type": "git",
     "url": "git+https://github.com/akgoze/Scrapper.git"

@@ -15,6 +15,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const express_1 = __importDefault(require("express"));
 const parsers_1 = require("./modules/parsers");
 const app = (0, express_1.default)();
+const PORT = process.env.PORT || 3000;
 app.use(express_1.default.json());
 app.get("/", (req, res) => {
     try {
@@ -36,5 +37,7 @@ app.get("/scrapper", (req, res) => __awaiter(void 0, void 0, void 0, function* (
         res.status(500).send({ error: error });
     }
 }));
-app.listen();
+app.listen(PORT, () => {
+    console.log(`Server is running on port ${PORT}`);
+});
 exports.default = app;
