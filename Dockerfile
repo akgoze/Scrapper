@@ -18,4 +18,4 @@ ENV NODE_ENV=production
 ENV PORT=3000
 
 # Run npm start when the container launches
-CMD ["npm", "start"]
+CMD ["npm", "run", "docker"]
